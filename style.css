@@ -107,8 +107,7 @@ header a {
     justify-content: space-around;
     align-items: center;
     width: 1349px;
-    height: 100vh;  
-    
+    height: 100vh;    
 }
 
 .posters-movies img {
@@ -188,4 +187,115 @@ header a {
     font-family: var(--family-poppins);
     color: white;
     margin-left: 80px;
+}
+
+/* media queries */
+@media (max-device-width: 768px) {
+    header {
+        display: flex;
+        width: 100vw;
+        height: 160px;
+        position: fixed;
+        top: 0;
+        opacity: 0.6;
+    }
+    header #helmet {
+        width: 80px;
+        height: 80px;
+    }
+    header #search {
+        width: 250px;
+        height: 28px;
+        border: 1,5px;
+        font-size: 15px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        font-size: 18px;
+    }
+    .iron {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 180px;
+        margin-left: 30px;
+    }
+    #image-iron {
+        width: 380px;
+        height: 488;
+        margin-bottom: 25px;
+    }
+    #iron-man {
+        text-align: center;
+    }
+    #iron-man h1 {
+        font-size: 3rem;
+    }
+    #iron-man h2 {
+        font-size: 2.25rem;
+    }
+    .movies h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.25rem;
+    }
+    .posters-movies {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 768px;
+        gap: 15px;
+        padding: 15px;
+        height: auto;    
+    }
+    .posters-movies img {
+        width: 450px;
+        height: 600px;
+    }
+    .text-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 768px;
+        height: auto;
+        padding: 15px;    
+        gap: 15px;
+    }
+    .comics h2 {
+        font-size: 2.25rem;
+    }
+    .img-comics {
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+    .img-comics img {
+        width: 450px;
+        height: 585px;
+    }
+    .navigation-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120;
+        width: 768px;
+    }
+    .navigation-footer img {
+        margin-left: 60px;
+        width: 65px;    
+    }
+    .developer {
+        font-size: 2.5rem;
+        margin-left: 50px;
+        text-align: center;
+    }
 }
