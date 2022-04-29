@@ -190,21 +190,21 @@ header a {
 }
 
 /* media queries */
-@media (max-device-width: 768px) {
+@media (max-device-width: 380px) {
     header {
         display: flex;
         width: 100vw;
-        height: 160px;
+        height: 100px;
         position: fixed;
         top: 0;
         opacity: 0.6;
     }
     header #helmet {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
     header #search {
-        width: 250px;
+        width: 150px;
         height: 28px;
         border: 1,5px;
         font-size: 15px;
@@ -213,59 +213,66 @@ header a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
-        font-size: 18px;
+        gap: 12px;
+        font-size: 13px;
     }
     .iron {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 180px;
+        margin-top: 110px;
         margin-left: 30px;
     }
     #image-iron {
-        width: 380px;
-        height: 488;
-        margin-bottom: 25px;
+        width: 315px;
+        height: 400px;
+        margin: 30px 0;
     }
     #iron-man {
         text-align: center;
     }
     #iron-man h1 {
-        font-size: 3rem;
+        font-size: 2.25rem;
     }
     #iron-man h2 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
     }
     .movies h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
     .posters-movies {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 768px;
+        align-items: center;
+        width: 100vw;
         gap: 15px;
         padding: 15px;
         height: auto;    
     }
     .posters-movies img {
-        width: 450px;
-        height: 600px;
+        width: 330px;
+        height: 440px;
     }
     .text-about {
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
         flex-direction: column;
-        width: 768px;
+        text-align: center;
+        width: 100vw;
         height: auto;
-        padding: 15px;    
-        gap: 15px;
+        margin: auto;
+        padding: 15px;
+    }
+    .text-about p {
+        font-size: 1.15rem;
+        
+    }
+    .text-about h2 {
+        font-size: 1.5rem;
     }
     .comics h2 {
         font-size: 2.25rem;
@@ -273,29 +280,30 @@ header a {
     .img-comics {
         display: flex;
         flex-direction: column;
-        width: 768px;
+        width: 100vw;
         height: auto;
         padding: 15px;
         gap: 15px;
     }
     .img-comics img {
-        width: 450px;
-        height: 585px;
+        width: 330px;
+        height: auto;
     }
     .navigation-footer {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        height: 120;
-        width: 768px;
+        flex-direction: row;
+        height: 120px;
+        width: 100vw;
     }
     .navigation-footer img {
-        margin-left: 60px;
-        width: 65px;    
+        margin-left: 30px;
+        width: 50px;    
     }
     .developer {
-        font-size: 2.5rem;
-        margin-left: 50px;
+        font-size: 1.25rem;
+        margin-left: 25px;
         text-align: center;
     }
 }
